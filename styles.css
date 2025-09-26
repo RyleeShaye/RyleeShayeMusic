@@ -1,0 +1,131 @@
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+
+body{
+  font:16px/1.6 Arial, Helvetica, sans-serif;
+  background: #29ede1;  
+  color: #1ffaef;
+}
+
+
+#wrapper{
+  background-color: #842eed;
+  margin: 0 auto;
+  border: 2px solid #111;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:.75em 1em;
+  background: #ff39da;
+  color: #ffffff;
+}
+.brand{display:flex;align-items:center;gap:.6em}
+.mark{
+  width:42px;height:18px;border:2px solid #111;
+  position:relative;display:inline-block;
+}
+.mark::before,.mark::after{
+  content:"";
+  position:absolute;
+  left:6px;right:6px;
+  border-top:2px solid #111;
+}
+.mark::before{top:5px}
+.mark::after{top:11px}
+.name{font:16px/1 monospace;color:#ffffff}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:2em;
+  margin:0;
+  padding:0;
+}
+nav a{
+  color:#ffffff;
+  text-decoration:none;
+  font:16px/1 monospace;
+}
+nav a:hover{color:#1ffaef}
+
+.hero{
+  padding:2rem 1.25em;
+}
+.hero-image{
+  margin:0 auto 1.5em;
+  max-width:520px;
+  border-radius:16px;
+  overflow:hidden;
+}
+.hero-image img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:inherit;
+}
+.hero-copy h1{
+  margin:0 0 1em;
+  font:700 2.5em/1.2 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  color:#ffffff;
+}
+.hero-copy p{
+  max-width:600px;
+  margin:0 0 1em;
+  color:#1ffaef;
+}
+
+footer{
+  background: #ff39da;
+  color: #ffffff;
+  text-align:center;
+  padding:1.25em;
+  font:14px/1.4 monospace;
+  border-top:2px solid #111;
+}
+
+@media (min-width:600px){
+  nav li{ border-bottom:none; }
+  nav ul{
+    display:flex;
+    justify-content:space-around;
+    gap:.5em;
+  }
+}
+
+@media (min-width:1024px){
+  #wrapper{
+    width:92%;            
+    margin:auto;
+    box-shadow:3px 3px 5px #002171;
+    border: solid 1px #002171;
+  }
+  .hero{
+    display:grid;
+    grid-template-columns: minmax(320px,520px) 1fr;
+    align-items:start;
+    gap:3em;
+    padding:3em 2.5em;
+  }
+}
+header h1 {
+  margin:0;
+  font:16px/1 monospace;
+}
+header h1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header h1 a:hover {
+  color: #1ffaef;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;      
+  margin: 0;
+  padding: 0;
+}
