@@ -196,17 +196,17 @@ footer{
   gap: 20px;
 }
 
-.video-grid video {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 500px;    
-  height: auto;
-  max-height: 70vh;     
-  object-fit: contain;
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, .25);
+.video-grid video{
+  display:block;
+  width:100%;
+  max-width:900px;     
+  aspect-ratio:16/9;    
+  height:auto;
+  margin:0 auto;
+  object-fit:contain;
+  border:none;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,.25);
 }
 @media (min-width:600px){
   nav li{ border-bottom:none; }
@@ -250,5 +250,6 @@ nav ul {
   gap: 3rem;      
   margin: 0;
   padding: 0;}
+
 
 
