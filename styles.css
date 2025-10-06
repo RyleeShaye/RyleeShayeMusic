@@ -39,11 +39,13 @@ header{
   color: #ffffff;
 }
 .brand{display:flex;align-items:center;gap:.6em}
-.logo {
-  height: 28px;
-  width: auto;
-  margin-right: 6px;
+.logo{
+  height:28px;
+  width:auto;
+  margin-right:6px;
+  flex:0 0 auto;
 }
+
 
 
 nav ul{
@@ -243,6 +245,7 @@ nav ul {
   gap: 3rem;      
   margin: 0;
   padding: 0;}
+
 
 
 
