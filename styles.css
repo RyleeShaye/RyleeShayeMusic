@@ -39,12 +39,13 @@ header{
   color: #ffffff;
 }
 .brand{display:flex;align-items:center;gap:.6em}
- .logo {
-  height: 35px;  
+.logo {
+  height: 10px;  /* adjust until it fits perfectly */
   width: auto;
   margin-right: 8px;
-  border-radius: 0; 
+  border-radius: 0; /* optional if you want square edges */
 }
+
 
 nav ul{
   list-style:none;
@@ -243,6 +244,7 @@ nav ul {
   gap: 3rem;      
   margin: 0;
   padding: 0;}
+
 
 
 
