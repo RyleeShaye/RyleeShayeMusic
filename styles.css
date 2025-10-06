@@ -39,19 +39,12 @@ header{
   color: #ffffff;
 }
 .brand{display:flex;align-items:center;gap:.6em}
-.mark{
-  width:42px;height:18px;border:2px solid #111;
-  position:relative;display:inline-block;
+ .logo {
+  height: 35px;  
+  width: auto;
+  margin-right: 8px;
+  border-radius: 0; 
 }
-.mark::before,.mark::after{
-  content:"";
-  position:absolute;
-  left:6px;right:6px;
-  border-top:2px solid #111;
-}
-.mark::before{top:5px}
-.mark::after{top:11px}
-.name{font:16px/1 monospace;color:#ffffff}
 
 nav ul{
   list-style:none;
@@ -250,6 +243,7 @@ nav ul {
   gap: 3rem;      
   margin: 0;
   padding: 0;}
+
 
 
 
