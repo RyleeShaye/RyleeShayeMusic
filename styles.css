@@ -40,10 +40,10 @@ header{
 }
 .brand{display:flex;align-items:center;gap:.6em}
 .logo {
-  height: 10px;  /* adjust until it fits perfectly */
+  height: 20px;  
   width: auto;
-  margin-right: 8px;
-  border-radius: 0; /* optional if you want square edges */
+  margin-right: 5px;
+  border-radius: 0; 
 }
 
 
@@ -244,6 +244,7 @@ nav ul {
   gap: 3rem;      
   margin: 0;
   padding: 0;}
+
 
 
 
