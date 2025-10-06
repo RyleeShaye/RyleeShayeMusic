@@ -40,7 +40,7 @@ header{
 }
 .brand{display:flex;align-items:center;gap:.6em}
 .logo {
-  height: 20px;  
+  height: 30px;  
   width: auto;
   margin-right: 5px;
   border-radius: 0; 
@@ -244,6 +244,7 @@ nav ul {
   gap: 3rem;      
   margin: 0;
   padding: 0;}
+
 
 
 
