@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rylee Shaye Music • Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <header>
+      <div class="brand">
+        <img src="RSLogo.png" alt="Rylee Shaye Music logo" class="logo">
+        <h1><a href="index.html" class="name">Rylee Shaye Music</a></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="hero" id="contact">
+      <div class="hero-copy">
+        <h1>Booking & Contact</h1>
+        <p>
+          For booking inquiries, private events, or general questions, please use the form below.
+          You can also reach Rylee on social media using the links provided.
+        </p>
+
+      
+        <form class="contact-form" id="contact-form" action="mailto:ryleeprofessional@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-grid">
+            <div class="field">
+              <label for="name"><span>*Name</span></label>
+              <input id="name" name="name" type="text" required autocomplete="name">
+            </div>
+
+            <div class="field">
+              <label for="email"><span>*Email</span></label>
+              <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+
+            <div class="field">
+              <label for="phone"><span>Phone</span></label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel">
+            </div>
+
+            <div class="field full">
+              <label for="message"><span>*Message</span></label>
+              <textarea id="message" name="message" rows="6" required
+                placeholder="Tell me about your event, date, location, set length, special requests…"></textarea>
+            </div>
+
+            <div class="actions full">
+              <button type="submit" class="btn">Send Request</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Social links -->
+        <h3 class="subhead" style="margin-top:1.5rem;">Follow & Connect</h3>
+        <p>
+          <a class="link-nav" href="https://www.facebook.com/ryleeshayemusic" target="_blank" rel="noopener noreferrer">Facebook</a> ·
+          <a class="link-nav" href="https://www.instagram.com/ryleeshayemusic" target="_blank" rel="noopener noreferrer">Instagram</a> ·
+          <a class="link-nav" href="https://www.tiktok.com/@ryleeshayemusic" target="_blank" rel="noopener noreferrer">TikTok</a> ·
+          <a class="link-nav" href="https://www.youtube.com/@ryleeshayemusic" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2025 Rylee Shaye. All rights reserved.
+    </footer>
+
+  </div>
+</body>
+</html>
