@@ -124,22 +124,27 @@ nav a:hover{ color:#1ffaef; }
   background-color: #842eed;
 }
 #events table tr:nth-of-type(even),
-#events thead tr {
+#events thead tr { 
   background-color: #ff39da; 
 }
-
-#events th {
-  color: #29ede1;
-  font-weight: 700;
-  border: 1px solid #1ffaef;
-  padding: .6em;
-  text-align: center;
+#events tbody tr:nth-child(even) {
+  background-color: #ff39da;
+}
+#events tbody tr:nth-child(odd) {
+  background-color: #842eed; /* your purple */
 }
 
+/* Clear divider under header */
+#events thead th {
+  border-bottom: 3px solid #1ffaef;  /* thicker cyan line */
+}
+
+/* Keep cell borders visible */
+#events th,
 #events td {
-  text-align: center;
-  padding: .6em;
   border: 1px solid #1ffaef;
+  padding: .6em;
+  text-align: center;
   color: #29ede1;
 }
 
@@ -442,5 +447,6 @@ footer{
     margin-right:auto;
   }
 }
+
 
 
