@@ -125,7 +125,7 @@ nav a:hover{ color:#1ffaef; }
 }
 
 #events tbody tr:nth-child(odd) td {
-  background-color: #842eed !important; 
+  background-color: transparent; 
 }
 
 #events th,
@@ -435,6 +435,7 @@ footer{
     margin-right:auto;
   }
 }
+
 
 
 
