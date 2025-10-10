@@ -120,19 +120,14 @@ nav a:hover{ color:#1ffaef; }
 }
 
 #events thead th {
-  background-color: #ff39da !important; /* bright pink header */
+  background-color: #ff39da !important; 
   border-bottom: 3px solid #1ffaef;
 }
 
-/* Alternate body rows properly */
-#events tbody tr:nth-child(odd) td {
+#events tbody tr:nth-child(even) td {
   background-color: #842eed !important; /* purple */
 }
-#events tbody tr:nth-child(even) td {
-  background-color: #ff39da !important; /* pink */
-}
 
-/* Borders & text color */
 #events th,
 #events td {
   border: 1px solid #1ffaef;
@@ -440,6 +435,7 @@ footer{
     margin-right:auto;
   }
 }
+
 
 
 
