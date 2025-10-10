@@ -119,25 +119,20 @@ nav a:hover{ color:#1ffaef; }
   border: 2px solid #1ffaef;
 }
 
-/* HEADER: Pink */
-#events thead tr {
-  background-color: #ff39da;
-}
+#events table tr { background: transparent; }
 
-/* BODY ROWS: alternate starting with PINK */
-#events tbody tr:nth-of-type(odd) {
-  background-color: #ff39da;   /* pink first */
-}
-#events tbody tr:nth-of-type(even) {
-  background-color: #842eed;   /* purple second */
-}
-
-/* HEADER BORDER */
 #events thead th {
-  border-bottom: 3px solid #1ffaef;
+  background: #ff39da;             
+  border-bottom: 3px solid #1ffaef; 
 }
 
-/* TABLE BORDERS AND TEXT */
+#events tbody tr:nth-child(odd) td { 
+  background: #ff39da;  
+}
+#events tbody tr:nth-child(even) td {
+  background: #842eed; 
+}
+
 #events th,
 #events td {
   border: 1px solid #1ffaef;
@@ -445,6 +440,7 @@ footer{
     margin-right:auto;
   }
 }
+
 
 
 
