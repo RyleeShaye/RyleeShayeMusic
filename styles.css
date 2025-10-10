@@ -371,16 +371,16 @@ nav a:hover{ color:#1ffaef; }
   color: #ff39da;
 }
 
-.email a {
-  color: #ff39da;         
-  text-decoration: none;   
-  font-weight: bold;      
+.email a, .email a:visited {
+  color: #ff39da !important;
+  text-decoration: none;
+  font-weight: bold;
   transition: color 0.2s ease-in-out;
 }
 
-.email a:hover {
-  color: #29ede1;          
-  text-decoration: underline;
+.email a:hover, .email a:focus {
+  color: #29ede1 !important;
+  text-decoration: none;
 }
 
 
@@ -420,3 +420,4 @@ footer{
     margin-right:auto;
   }
 }
+
