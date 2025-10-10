@@ -68,43 +68,6 @@ nav a:hover{ color:var(--cyan); }
 
 /* ========== Events Table (fixed) ========== */
 #events{ padding-bottom: 3em; }
-#events h2{
-  text-align:center; font-size:3rem; font-weight:700; color:var(--bg-cyan);
-  margin-bottom:.5em;
-}
-
-#events table{
-  width:80%; max-width:1000px; margin:0 auto 20px;
-  border-collapse: collapse;
-  font-size:1.2rem;
-  border:2px solid var(--cyan);           /* cyan outer border */
-}
-
-/* reset any row backgrounds that might sneak in */
-#events table tr{ background: transparent; }
-
-/* header cells = pink, with thick cyan divider */
-#events thead th{
-  background: var(--pink);
-  border:1px solid var(--cyan);
-  border-bottom: 3px solid var(--cyan);
-  color: var(--bg-cyan);
-  font-weight:700;
-  padding:.6em;
-  text-align:center;
-}
-
-/* body cells: alternate PURPLE / PINK starting at row 1 (purple) */
-#events tbody > tr:nth-child(odd) > td{  background: var(--purple); }
-#events tbody > tr:nth-child(even) > td{ background: var(--pink);   }
-
-/* cyan grid lines + text color */
-#events td{
-  border:1px solid var(--cyan);
-  padding:.6em;
-  text-align:center;
-  color: var(--bg-cyan);
-}
 
 /* ========== CTA ========== */
 .cta-booking{ text-align:center; margin:1.25rem auto 2.25rem; }
@@ -223,3 +186,41 @@ footer{
 /* Thank-you page link */
 #thankyou .link-nav{ display:inline-block; color:#ff61e4; font-weight:700; text-decoration:none; }
 #thankyou .link-nav:hover{ color:var(--cyan) !important; }
+/* ==== HARD OVERRIDE FOR EVENTS TABLE ==== */
+
+/* reset anything older */
+.events-table tr,
+.events-table th,
+.events-table td { background: transparent !important; }
+
+/* cyan outer border + grid */
+.events-table {
+  border-collapse: collapse;
+  border: 2px solid #1ffaef !important;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  font-size: 1.2rem;
+}
+.events-table th,
+.events-table td {
+  border: 1px solid #1ffaef !important;
+  padding: .6em;
+  text-align: center;
+  color: #29ede1;
+}
+
+/* header cells = PINK */
+.events-table thead tr > th {
+  background: #ff39da !important;
+  border-bottom: 3px solid #1ffaef !important;
+  font-weight: 700;
+}
+
+/* body stripes at the CELL level (so no row bg can override) */
+/* First data row PURPLE, then PINK, repeat */
+.events-table tbody > tr:nth-child(odd) > td  { background: #842eed !important; }
+.events-table tbody > tr:nth-child(even) > td { background: #ff39da !important; }
+
+/* If you want first data row PINK instead, swap the two colors above. */
+
