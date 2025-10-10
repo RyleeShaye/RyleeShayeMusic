@@ -114,14 +114,15 @@ nav a:hover{ color:#1ffaef; }
   font-size:1.2rem;
   border:2px solid #1ffaef;
 }
-#events table th:nth-of-type(even){ background-color:#ff39da; }
+#events table th{
+  background-color:#ff39da;
+}
+#events table tr:nth-of-type(even){ background-color:#ff39da; }
 #events td, #events th{
   text-align:center;
   padding:.5em;
   border:1px solid #1ffaef;
-  background-color: #ff39da;
 }
-
 
 .cta-booking{
   text-align:center;
@@ -422,5 +423,3 @@ footer{
     margin-right:auto;
   }
 }
-
-
