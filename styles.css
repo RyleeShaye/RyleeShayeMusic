@@ -119,6 +119,11 @@ nav a:hover{ color:#1ffaef; }
   text-align:center;
   padding:.5em;
   border:1px solid #1ffaef;
+  background-color: #ff39da;
+}
+
+#events th{
+  background-color: #ff39da;
 }
 
 .cta-booking{
@@ -420,3 +425,4 @@ footer{
     margin-right:auto;
   }
 }
+
