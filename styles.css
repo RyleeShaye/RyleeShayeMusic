@@ -98,27 +98,49 @@ nav a:hover{ color:#1ffaef; }
   color:#1ffaef;
 }
 
-#events{ padding-bottom:3em; }
-#events h2{
-  text-align:center;
-  font-size:3rem;
-  font-weight:700;
-  color:#29ede1;
-  margin-bottom:.5em;
+#events {
+  padding-bottom: 3em;
 }
-#events table{
-  width:80%;
-  max-width:1000px;
-  margin:0 auto 20px;
-  border-collapse:collapse;
-  font-size:1.2rem;
-  border:2px solid #1ffaef;
+
+#events h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #29ede1;
+  margin-bottom: .5em;
 }
-#events table tr:nth-of-type(even){ background-color:#ff39da; }
-#events td, #events th{
-  text-align:center;
-  padding:.5em;
-  border:1px solid #1ffaef;
+
+#events table {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  border-collapse: collapse;
+  font-size: 1.2rem;
+  border: 2px solid #1ffaef;
+}
+
+
+#events table tr:nth-of-type(odd) {
+  background-color: #842eed;
+}
+#events table tr:nth-of-type(even),
+#events thead tr {
+  background-color: #ff39da; 
+}
+
+#events th {
+  color: #29ede1;
+  font-weight: 700;
+  border: 1px solid #1ffaef;
+  padding: .6em;
+  text-align: center;
+}
+
+#events td {
+  text-align: center;
+  padding: .6em;
+  border: 1px solid #1ffaef;
+  color: #29ede1;
 }
 
 .cta-booking{
@@ -420,4 +442,5 @@ footer{
     margin-right:auto;
   }
 }
+
 
