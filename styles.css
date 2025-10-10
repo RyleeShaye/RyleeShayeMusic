@@ -114,9 +114,7 @@ nav a:hover{ color:#1ffaef; }
   font-size:1.2rem;
   border:2px solid #1ffaef;
 }
-#events table tr:nth-of-type(even){
-  background-color: #ff39da;
-} }
+#events table tr:nth-of-type(even){ background-color:#ff39da; }
 #events td, #events th{
   text-align:center;
   padding:.5em;
@@ -373,16 +371,16 @@ nav a:hover{ color:#1ffaef; }
   color: #ff39da;
 }
 
-.email a, .email a:visited {
-  color: #ff39da !important;
-  text-decoration: none;
-  font-weight: bold;
+.email a {
+  color: #ff39da;         
+  text-decoration: none;   
+  font-weight: bold;      
   transition: color 0.2s ease-in-out;
 }
 
-.email a:hover, .email a:focus {
-  color: #29ede1 !important;
-  text-decoration: none;
+.email a:hover {
+  color: #29ede1;          
+  text-decoration: underline;
 }
 
 
@@ -422,7 +420,3 @@ footer{
     margin-right:auto;
   }
 }
-
-
-
-
