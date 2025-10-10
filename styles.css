@@ -124,8 +124,8 @@ nav a:hover{ color:#1ffaef; }
   border-bottom: 3px solid #1ffaef;
 }
 
-#events tbody tr:nth-child(even) td {
-  background-color: #842eed !important; /* purple */
+#events tbody tr:nth-child(odd) td {
+  background-color: #842eed !important; 
 }
 
 #events th,
@@ -435,6 +435,7 @@ footer{
     margin-right:auto;
   }
 }
+
 
 
 
