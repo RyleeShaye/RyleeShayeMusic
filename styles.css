@@ -492,9 +492,7 @@ footer{
   position: relative;
   width: 100%;
   aspect-ratio: 9 / 16;            /* default for TikTok/shorts */
-  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,.35);
   background: transparent;
 }
 
@@ -515,6 +513,7 @@ footer{
 }
 
 /* Strip the white card s*
+
 
 
 
