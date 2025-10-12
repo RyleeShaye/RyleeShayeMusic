@@ -441,9 +441,10 @@ footer{
   height: 600px;
   border: 4px solid #ff39da; /* pink border */
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255, 57, 218, 0.4);
+  box-shadow: 0 0 20px #1ffaef;
   transition: 0.3s ease;
 }
+
 
 
 
