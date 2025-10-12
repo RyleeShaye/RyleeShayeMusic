@@ -287,6 +287,28 @@ nav a:hover{ color:#1ffaef; }
   border-radius:12px;
   box-shadow:0 6px 18px rgba(0,0,0,0.25);
 }
+/* Center + pink-frame for Google Calendar (works for #calendar OR #events) */
+#calendar,
+#events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  padding: 2em 0;
+}
+
+#calendar iframe,
+#events iframe {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  height: 600px;
+  border: 6px solid #ff39da !important;  /* override inline border:0 */
+  border-radius: 18px;
+  box-shadow: 0 0 35px 10px rgba(255,57,218,.6);
+}
 
 #videos video{
   display:block;
@@ -423,3 +445,4 @@ footer{
     margin-right:auto;
   }
 }
+
