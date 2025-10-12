@@ -442,13 +442,10 @@ footer{
   border: 4px solid #ff39da; /* pink border */
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(255, 57, 218, 0.4);
-  filter: hue-rotate(300deg) saturate(1.2);
   transition: 0.3s ease;
 }
 
-#events iframe:hover {
-  filter: hue-rotate(320deg) saturate(1.4);
-}
+
 
 
 
