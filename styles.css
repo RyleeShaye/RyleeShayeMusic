@@ -154,14 +154,12 @@ nav ul{ list-style: none; display: flex; gap: 2em; margin: 0; padding: 0; }
   position: absolute; inset: 0;
   width: 100% !important; height: 100% !important;
   margin: 0 !important; border: 0 !important;
-  background: transparent !important; box-shadow: none !important;
   min-width: 0 !important; max-width: none !important;
 }
 .video > .tiktok-embed > section,
 .video > .instagram-media > section{
   position: absolute !important; inset: 0 !important;
   width: 100% !important; height: 100% !important;
-  background: transparent !important; box-shadow: none !important; border: 0 !important;
 }
 
 /* ===== Blog bits ===== */
@@ -217,3 +215,26 @@ footer{
   #contact .form-grid .field.full{ grid-column: 1 / -1; }
   #contact .actions{ grid-column: 1 / -1; justify-self: center; }
 }
+/* Center + pink-frame for Google Calendar (works for #calendar OR #events) */
+#calendar,
+#events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px auto;
+  padding: 2em 0;
+}
+
+#calendar iframe,
+#events iframe {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 900px;
+  height: 600px;
+  border: 6px solid #ff39da !important;  /* override inline border:0 */
+  border-radius: 18px;
+  box-shadow: 0 0 35px 10px rgba(255,57,218,.6);
+}
+
