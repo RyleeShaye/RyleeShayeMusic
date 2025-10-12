@@ -122,12 +122,7 @@ nav ul{ list-style: none; display: flex; gap: 2em; margin: 0; padding: 0; }
   display: flex; flex-direction: column; align-items: center; text-align: center; margin: 20px auto;
 }
 #calendar h2{ font-size: 3rem; font-weight: 700; margin: 10px 0 15px; color: #00e5ff; }
-#calendar iframe{
-  display: block; width: 90%; max-width: 900px; height: 600px; margin: 0 auto;
-  border: 6px solid #ff39da !important; border-radius: 18px;
-  box-shadow: 0 0 35px 10px rgba(255,57,218,.6);
-}
-
+/* Center the calendar */ #events { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2em 0; } /* Calendar iframe styling */ #events iframe { display: block; margin: 0 auto; width: 90%; max-width: 900px; height: 600px; /* Make border thick and always visible */ border: 6px solid #ff39da !important; border-radius: 18px; /* Big pink glow */ box-shadow: 0 0 35px 10px rgba(255, 57, 218, 0.6); }
 /* ===== Videos (Embeds) ===== */
 #videos{ max-width: 1100px; margin: 32px auto; padding: 0 12px; }
 #videos h2{ text-align: center; margin-bottom: 16px; font-size: 3rem; font-weight: 700; color: #00e5ff; }
@@ -217,3 +212,4 @@ footer{
   #contact .form-grid .field.full{ grid-column: 1 / -1; }
   #contact .actions{ grid-column: 1 / -1; justify-self: center; }
 }
+
