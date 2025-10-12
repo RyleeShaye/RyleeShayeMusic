@@ -433,17 +433,88 @@ footer{
   padding: 2em 0;
 }
 
+/* Calendar iframe styling */
 #events iframe {
   display: block;
   margin: 0 auto;
   width: 90%;
   max-width: 900px;
   height: 600px;
-  border: 4px solid #ff39da; /* pink border */
-  border-radius: 12px;
-  box-shadow: 0 0 20px #1ffaef;
+
+  /* Make border thick and always visible */
+  border: 6px solid #ff39da !important;
+  border-radius: 18px;
+
+  /* Big pink glow */
+  box-shadow: 0 0 35px 10px rgba(255, 57, 218, 0.6);
+
+  /* Keep the hue tint but not too strong */
+  filter: hue-rotate(300deg) saturate(1.1);
   transition: 0.3s ease;
 }
+
+/* Add a stronger hover glow */
+#events iframe:hover {
+  box-shadow: 0 0 55px 15px rgba(255, 57, 218, 0.9);
+  filter: hue-rotate(320deg) saturate(1.3);
+}
+
+/* ===== Videos ===== */
+#videos {
+  max-width: 1100px;
+  margin: 32px auto;
+  padding: 0 12px;
+}
+
+#videos h2 {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #00e5ff;
+}
+
+/* Responsive grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+@media (min-width: 700px) {
+  .video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1100px) {
+  .video-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* Each video card (works for iframe OR blockquote) */
+.video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9 / 16;            /* default for TikTok/shorts */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  background: transparent;
+}
+
+/* Landscape helper if needed (YouTube, etc.) */
+.video.landscape { aspect-ratio: 16 / 9; }
+
+/* Make the media fill the card */
+.video iframe,
+.video embed,
+.video video,
+.video .tiktok-embed,
+.video .instagram-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0 !important;
+}
+
+/* Strip the white card s*
 
 
 
