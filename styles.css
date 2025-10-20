@@ -145,15 +145,15 @@ nav ul{ list-style: none; display: flex; gap: 2em; margin: 0; padding: 0; }
 }
 
 /* Remove white cards TikTok/Instagram add */
-.video > .tiktok-embed, .video > .instagram-media{
+.tiktok-embed{
   position: absolute; inset: 0;
   width: 100% !important; height: 100% !important;
   margin: 0 !important; border: 0 !important;
   background: transparent !important; box-shadow: none !important;
   min-width: 0 !important; max-width: none !important;
 }
-.video > .tiktok-embed > section,
-.video > .instagram-media > section{
+.tiktok-embed > section,
+.instagram-media > section{
   position: absolute !important; inset: 0 !important;
   width: 100% !important; height: 100% !important;
   background: transparent !important; box-shadow: none !important; border: 0 !important;
@@ -212,4 +212,5 @@ footer{
   #contact .form-grid .field.full{ grid-column: 1 / -1; }
   #contact .actions{ grid-column: 1 / -1; justify-self: center; }
 }
+
 
